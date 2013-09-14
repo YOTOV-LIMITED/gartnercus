@@ -349,7 +349,7 @@ class Gartner extends CActiveRecord {
 	<body>
 	<div style="width:800px;margin:auto;">
 	<div style="height:100px;">
-	<img src="https://app.ya-yaonline.co.uk/gartnercus/images/XmasHeader10.jpg">
+	<img src="https://app.magictony-se.com/gartnercus/images/XmasHeader10.jpg">
 	</div>
 	<br />
 		<p>It is our pleasure to confirm your attendance at Gartner\'s Holiday Event for Fort Myers Associates.</p>
@@ -374,7 +374,7 @@ class Gartner extends CActiveRecord {
 	<p>Please note all attendees must be over 21 years old. Smoking is not permitted inside the zoo. Should you have a need to change your party confirmation, or ask a question, please email <a href="mailto:corporateevents@gartner.com">corporateevents@gartner.com</a></p>
 	<br /><br /><br />
 	<div style="float:left;width:100%;height:100px;">
-	<img src="https://app.ya-yaonline.co.uk/gartnercus/images/XmasFooter10.jpg">
+	<img src="https://app.magictony-se.com/gartnercus/images/XmasFooter10.jpg">
 	</div>
 	</div>
 	</body>

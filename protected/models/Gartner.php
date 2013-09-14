@@ -59,6 +59,7 @@ class Gartner extends CActiveRecord {
 		//	array('optionsRadios', 'required', 'on' => 'Accepted', 'message' => 'Please indicate if you are bringing a guest.'),
 			array('Email', 'length', 'max'=>100),
 			array('Email', 'email'),
+			array('Email','unique','message' => 'Email already registered.'),
 			array('DeclineReason, OtherDietaryRequirements, GuestOtherDietaryRequirements', 'length', 'max'=>200),
 			array('CreateTime, UpdateTime', 'length', 'max'=>20),
 			// The following rule is used by search().
@@ -352,7 +353,7 @@ class Gartner extends CActiveRecord {
 	<img src="https://app.magictony-se.com/gartnercus/images/XmasHeader10.jpg">
 	</div>
 	<br />
-	<p>It is our pleasure to confirm your attendance at Gartner''''s Holiday Event for Fort Myers Associates.</p>
+	<p>It is our pleasure to confirm your attendance at Gartner\'s Holiday Event for Fort Myers Associates.</p>
 	<p>
   <table align="center">
 			<tr align="center"><td>The Ritz-Carlton Naples</td>

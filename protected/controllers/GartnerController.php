@@ -168,8 +168,9 @@ class GartnerController extends Controller {
 			$model->UpdateTime = $model->CreateTime;
 			$model->setScenario('Accepted');
 			if($model->save()){
-				Gartner::sendLocalMail($model->Email);
+				//Gartner::sendLocalMail($model->Email);
 				//Gartner::sendMail($model->Email);
+				$this->sendMail($model->Email,Yii::app()->params['Email']['subject']);
 				$this->redirect(array("gartner/join"));
 			}
 		}
