@@ -97,7 +97,6 @@ class Gartner extends CActiveRecord {
 			'DeclineReason' => 'Decline Reason',	
 			'CreateTime' => 'Create Time',
 			'UpdateTime' => 'Update Time',
-			'Traffic' => 'Please indicate how you will be travelling to the Holiday Party',	
 			'optionsRadios' => 'Options Radios'		
 		);
 	}

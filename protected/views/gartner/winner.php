@@ -39,6 +39,7 @@
 		</fieldset>
 	</div>
 	</div>
+	<!-- 
 	<div class="span12">
 	<div class="control-group <?php if($model->getError('Traffic')){ echo 'error';}?>">
 		<fieldset>
@@ -48,6 +49,7 @@
 		</fieldset>
 	</div>
 	</div>
+	 -->
 	<div class="span12">
 	<div class="control-group <?php if($model->getError('Department')){ echo 'error';}?>">
 			<fieldset>

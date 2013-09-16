@@ -18,7 +18,6 @@
 	<div style="width:230px;margin-right:50px;float:left;align:center;"><a style="align:center;width:200px;background-color:#388cbb;background-image:-webkit-linear-gradient(top, #2aabe2, #388cbb);" href="/gartnercus/index.php?r=gartner/sort" class="btn btn-large btn-primary" >Department Dietary Report</a><p></p></div>
 </div>
 <div class="row">
-	<div style="width:230px;margin-right:50px;float:left;align:center;"><a style="align:center;width:200px;background-color:#388cbb;background-image:-webkit-linear-gradient(top, #2aabe2, #388cbb);" href="/gartnercus/index.php?r=gartner/traffic" class="btn btn-large btn-primary" >Travel Report</a><p></p></div>
 	<div style="width:230px;margin-right:50px;font-align:center;float:left;"><a style="width:200px;background-color:#388cbb;background-image:-webkit-linear-gradient(top, #2aabe2, #388cbb);" href="/gartnercus/index.php?r=gartner/logout" class="btn btn-large btn-primary" >Logout</a><p></p></div>
 </div>
 </div>

@@ -55,7 +55,7 @@ class Gartner extends CActiveRecord {
 			array('FirstName, LastName, GuestFirstName, GuestLastName', 'length', 'max'=>40),
 			array('Department', 'match', 'pattern' => '/^(1[0-9]|[1-9])$/is', 'on' =>'Accepted', 'message' => 'Department cannot be blank.'),
 			array('Department', 'required', 'on' => 'Accepted'),
-			array('Traffic', 'required', 'on' => 'Accepted', 'message' => 'Please indicate how you will be travelling to the Holiday Party'),
+		//	array('Traffic', 'required', 'on' => 'Accepted', 'message' => 'Please indicate how you will be travelling to the Holiday Party'),
 		//	array('optionsRadios', 'required', 'on' => 'Accepted', 'message' => 'Please indicate if you are bringing a guest.'),
 			array('Email', 'length', 'max'=>100),
 			array('Email', 'email'),
@@ -98,7 +98,7 @@ class Gartner extends CActiveRecord {
 			'DeclineReason' => 'Decline Reason',	
 			'CreateTime' => 'Create Time',
 			'UpdateTime' => 'Update Time',
-			'Traffic' => 'Please indicate how you will be travelling to the Holiday Party',	
+			//'Traffic' => 'Please indicate how you will be travelling to the Holiday Party',	
 			'optionsRadios' => 'Options Radios'		
 		);
 	}
@@ -275,7 +275,7 @@ class Gartner extends CActiveRecord {
 		$sorts = self::sort_objs($sorts, 'Department');
 		return $sorts;
 	}
-	function sort_objs($list,$key,$order='asc') {
+	public static function  sort_objs($list,$key,$order='asc') {
 		if(empty($list) || !isset($list[0]->{$key}))
 			return $list;
 	
