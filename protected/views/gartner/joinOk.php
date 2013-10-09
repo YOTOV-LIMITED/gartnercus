@@ -8,7 +8,7 @@
 			</tr>
 			<tr align="center"><td>280 Vanderbilt Beach Road</td></tr>
 			<tr align="center"><td>Naples,Florida 34108</td></tr>
-			<tr align="center"><td>Friday,December 13,2013, 6:30p.m - 10:30p.m</td></tr>
+			<tr align="center"><td>Friday, December 13,2013, 6:30p.m - 10:30p.m</td></tr>
   </table>
 	</p>
 	<p style="color:#0065a4">How to Get there:</p>

@@ -59,7 +59,7 @@ class Gartner extends CActiveRecord {
 		//	array('optionsRadios', 'required', 'on' => 'Accepted', 'message' => 'Please indicate if you are bringing a guest.'),
 			array('Email', 'length', 'max'=>100),
 			array('Email', 'email'),
-			array('Email','unique','message' => 'Email already registered.'),
+			array('Email','unique','message' => 'Your registration is already confirmed. If you have any queries please contact <a href="mailto:corporateevents@gartner.com">corporateevents@gartner.com</a>'),
 			array('DeclineReason, OtherDietaryRequirements, GuestOtherDietaryRequirements', 'length', 'max'=>200),
 			array('CreateTime, UpdateTime', 'length', 'max'=>20),
 			// The following rule is used by search().
@@ -155,6 +155,10 @@ class Gartner extends CActiveRecord {
 				2 => 'Vegetarian',
 				3 => 'Vegan',
 				4 => 'Gluten Free',
+				5 => 'Halal',
+				6 => 'Kosher',
+				7 => 'Lactose Intolerant',
+				8 => 'Allerigc to sea food',
 				9 => 'Other'
 		);
 		return $requirements;
@@ -360,7 +364,7 @@ class Gartner extends CActiveRecord {
 			</tr>
 			<tr align="center"><td>280 Vanderbilt Beach Road</td></tr>
 			<tr align="center"><td>Naples,Florida 34108</td></tr>
-			<tr align="center"><td>Friday,December 13,2013, 6:30p.m - 10:30p.m</td></tr>
+			<tr align="center"><td>Friday, December 13,2013, 6:30p.m - 10:30p.m</td></tr>
   </table>
 	</p>
 	<p style="color:#0065a4">How to Get there:</p>
