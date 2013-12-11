@@ -39,7 +39,7 @@ class GartnerController extends Controller {
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'logout', 'report', 'users', 'export', 'diet', 'department', 'sort', 'traffic', 'entire'),
+				'actions'=>array('admin','delete', 'logout', 'report', 'users', 'export', 'diet', 'department', 'sort', 'traffic', 'entire','BatchEmail'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -373,5 +373,27 @@ class GartnerController extends Controller {
 			else
 				$this->render('error', $error);
 		}
+	}
+	
+	public function actionBatchEmail($ids){
+		$id_arr = explode(',',$ids);
+		set_time_limit(0);
+		foreach($id_arr as $id){
+			try{
+				$model = $this->loadModel(intval(trim($id)));
+				if($model->status==1){
+					$title = 'Holiday Party Directions';
+					$this->sendMail($model->email,$title,$model,'hotel_email','');
+					echo "OK <br/>";
+					Yii::log('sent '.$model->email . "\t" . " OK",'error');
+				}else{
+					echo 'No reg error<br/>';
+				}
+			}catch (Exception $e){
+				Yii::log('sent '.$model->email . "\t" . "FALSE" . "\t" . $e,'error');
+			}
+		}
+		echo 'ok';
+		Yii::app()->end();
 	}
 }
